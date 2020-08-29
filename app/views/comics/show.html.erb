@@ -1,0 +1,32 @@
+<div class="row"> 
+  <div class="col-lg-3">
+    <p>レビュー詳細ページ</p>
+      <%= image_tag @comic.picture, width: 200 %>
+  </div>
+      
+  <div class="col-lg-9">
+    <div class="row">
+      <table class="table">
+        <tr>
+          <th class="text-center">タイトル</th>
+          <th class="text-center">筆者</th>
+          <th class="text-center">値段</th>
+        </tr>
+         <tr>
+          <td class="text-center"><%= @comic.tittle %></td>
+          <td class="text-center"><%= @comic.author %></td>
+          <td class="text-center"><%= @comic.price %></td>
+         </tr>
+      </table>
+    </div>
+      <div class="card">
+        <div class="card-header">
+          レビュー
+        </div>
+        <div class="card-body">
+          <%= @comic.review %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
